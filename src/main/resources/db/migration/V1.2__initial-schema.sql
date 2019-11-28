@@ -1,0 +1,15 @@
+DELETE FROM contacts;
+INSERT INTO contacts(id, name) VALUES (1, 'John');
+INSERT INTO contacts(id, name) VALUES (2, 'Andrei');
+INSERT INTO contacts(id, name) VALUES (3, 'Tania');
+INSERT INTO contacts(id, name) VALUES (4, 'Anna');
+INSERT INTO contacts(id, name) VALUES (5, 'Nastya');
+INSERT INTO contacts(id, name) VALUES (6, 'Yasha');
+INSERT INTO contacts(id, name) VALUES (7, 'Vova');
+INSERT INTO contacts(id, name) VALUES (8, 'Dmitro');
+INSERT INTO contacts(id, name) VALUES (9, 'Maksim');
+INSERT INTO contacts(id, name) VALUES (10, 'Olga');
+INSERT INTO contacts(id, name) VALUES (11, 'Sasha');
+INSERT INTO contacts(id, name) VALUES (12, 'Vika');
+INSERT INTO contacts(id, name) VALUES (13, 'Veronika');
+INSERT INTO contacts(id, name) VALUES (14, 'Evgenii');

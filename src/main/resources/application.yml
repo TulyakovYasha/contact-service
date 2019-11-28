@@ -1,0 +1,23 @@
+spring:
+  main:
+    banner-mode: 'OFF'
+  application:
+    name: contact-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contacts
+    username: contact_user
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    url: ${spring.datasource.url}
+    user: flyway
+    password: flyway
+    schemas: public
+    baselineOnMigrate: true
+
+server:
+  port: 8088
+contact-service :
+  contact.spec : maximumSize=500, expireAfterWrite=10m

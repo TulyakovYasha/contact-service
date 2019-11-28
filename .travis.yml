@@ -1,0 +1,17 @@
+# https://docs.travis-ci.com/user/languages/java/
+language: java
+jdk: openjdk11
+
+# https://docs.travis-ci.com/user/database-setup/#PostgreSQL
+before_script:
+- psql -c 'create database contacts' -U postgres
+- psql -c 'create user "contact_user"; grant all privileges on database contacts to "contact_user"' -U postgres
+
+# https://docs.travis-ci.com/user/customizing-the-build#Building-Specific-Branches
+branches:
+  only:
+  - master
+
+# https://stackoverflow.com/a/49852690/548473:
+services:
+  - postgresql
